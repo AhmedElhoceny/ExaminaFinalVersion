@@ -1,0 +1,21 @@
+﻿@model ExaminaFinalVersion.Models.Picture
+
+@{
+    ViewData["Title"] = "ShowContentElementPictures";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent">
+    <div class="PersonDetails">
+        <p>DataID       :     @(Model.Picture_ID)</p>
+        <p>Title        :     @(Model.Picture_Title)</p>
+        <p>Script       :     @(Model.Picture_Script)</p>
+        <p>CourseName   :     @(ViewBag.CourseName)</p>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div class="PersonCourses" style="margin-top: 80px;">
+        <div class="CoursesElements" style="height:600px !important">
+            <img style="width:100% ; height:100%" src="~/CoursesData/@(Model.Picture_Distenation)" />
+        </div>
+    </div>
+</div>

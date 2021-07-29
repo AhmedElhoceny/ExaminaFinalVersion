@@ -1,0 +1,340 @@
+﻿@model ExaminaFinalVersion_Wallahi.Models.MegaModelView
+
+@{
+    ViewData["Title"] = "ManagePage";
+    Layout = "~/_Layout3.cshtml";
+}
+
+<div class="ControllBar">
+    <div class="Choosen" onclick="SelectFun(this, 'Courses')">
+        <p>Courses</p>
+    </div>
+    <div onclick="SelectFun(this , 'Students')">
+        <p>Students</p>
+    </div>
+    <div onclick="SelectFun(this , 'CoursesStudents')">
+        <p>Courses<br> Students</p>
+    </div>
+    <div onclick="SelectFun(this , 'Exams')">
+        <p>Exams</p>
+    </div>
+    <div onclick="SelectFun(this , 'Grads')">
+        <p>Grads</p>
+    </div>
+    <div onclick="SelectFun(this , 'Pictures')">
+        <p>Pictures</p>
+    </div>
+    <div onclick="SelectFun(this , 'Project')">
+        <p>Project</p>
+    </div>
+    <div onclick="SelectFun(this , 'Readings')">
+        <p>Readings</p>
+    </div>
+    <div onclick="SelectFun(this , 'Sheets')">
+        <p>Sheets</p>
+    </div>
+    <div onclick="SelectFun(this , 'Video')">
+        <p>Video</p>
+    </div>
+</div>
+<form method="post" asp-action="AddCourse" asp-controller="Manage" enctype="multipart/form-data" class="LogIn CourseForm" style="        position: absolute !important;
+        top: -2000px;
+        background-color: #0066FFC9 !important; transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="Course_Name..." name="CourseName" />
+    <input type="file" name="CourseImage" />
+    <input type="number" placeholder="ProfessorID" name="ProfessorID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddStudent" asp-controller="Manage" enctype="multipart/form-data" class="LogIn StudentForm" style="        position: absolute !important;
+        top: -2000px;
+        background-color: #0066FFC9 !important; transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="StudentName..." name="StudentName" />
+    <input type="text" placeholder="StudentEmail..." name="StudentEmail" />
+    <input type="password" placeholder="StudentPassword..." name="StudentPassword" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddGrads" asp-controller="Manage" enctype="multipart/form-data" class="LogIn GradsForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="GradsTitle..." name="GradsTitle" />
+    <input type="text" placeholder="GradsScript..." name="GradsScript" />
+    <input type="file" name="GradsImage" />
+    <input type="file" name="GradsDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddCoursesStudents" asp-controller="Manage" enctype="multipart/form-data" class="LogIn CoursesStudentsForm" style="        position: absolute !important;
+        top: -2000px;
+        background-color: #0066FFC9 !important; transition: top 0.3s ease-in-out
+">
+    <input type="number" placeholder="StudentID..." name="StudentID" />
+    <input type="number" placeholder="CourseID..." name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddExam" asp-controller="Manage" enctype="multipart/form-data" class="LogIn ExamsForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="ExamTitle..." name="ExamTitle" />
+    <input type="text" placeholder="ExamScript..." name="ExamScript" />
+    <input type="file" name="ExamImage" />
+    <input type="file" name="ExamDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddPictures" asp-controller="Manage" enctype="multipart/form-data" class="LogIn PicturesForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="PicturesTitle..." name="PicturesTitle" />
+    <input type="text" placeholder="PicturesScript..." name="PicturesScript" />
+    <input type="file" name="PicturesImage" />
+    <input type="file" name="PicturesDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddProject" asp-controller="Manage" enctype="multipart/form-data" class="LogIn ProjectForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="ProjectTitle..." name="ProjectTitle" />
+    <input type="text" placeholder="ProjectScript..." name="ProjectScript" />
+    <input type="file" name="ProjectImage" />
+    <input type="file" name="ProjectDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddReadings" asp-controller="Manage" enctype="multipart/form-data" class="LogIn ReadingsForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="ReadingsTitle..." name="ReadingsTitle" />
+    <input type="text" placeholder="ReadingsScript..." name="ReadingsScript" />
+    <input type="file" name="ReadingsImage" />
+    <input type="text" name="ReadingsContent" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddSheets" asp-controller="Manage" enctype="multipart/form-data" class="LogIn SheetsForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="SheetsTitle..." name="SheetsTitle" />
+    <input type="text" placeholder="SheetsScript..." name="SheetsScript" />
+    <input type="file" name="SheetsImage" />
+    <input type="file" name="SheetsDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<form method="post" asp-action="AddVideo" asp-controller="Manage" enctype="multipart/form-data" class="LogIn VideoForm" style="        position: absolute !important;
+        top: -2000px;
+        height: 530px;
+        background-color: #0066FFC9 !important;
+        transition: top 0.3s ease-in-out
+">
+    <input type="text" placeholder="VideoTitle..." name="VideoTitle" />
+    <input type="number" placeholder="VideoScript..." name="VideoScript" />
+    <input type="file" name="VideoImage" />
+    <input type="file" name="VideoDestination" />
+    <input type="number" name="CourseID" />
+    <button type="submit">Add</button>
+</form>
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="HiddenDiv" onclick="HideAddForm()"></div>
+<div class="DetailsContainer">
+    <div class="TheContent Courses Visible">
+        <button class="AddNewData" onclick="SeeAddForm('Courses')">Add Data</button>
+        @if (Model.Courses != null)
+        {
+            foreach (var item in Model.Courses)
+            {
+                <a class="TheData" asp-action="ShowCourseControlPage" asp-controller="Manage" asp-route-courseID="@item.Course_ID">
+                    <P>DataID : @(item.Course_ID)</P>
+                    <P>Title : @(item.Course_Name)</P>
+                    <img src="~/Images/@(item.Course_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Students">
+        <button class="AddNewData" onclick="SeeAddForm('Students')">Add Data</button>
+        @if (Model.Students != null)
+        {
+            foreach (var item in Model.Students)
+            {
+                <a class="TheData" asp-action="ShowStudentControlPage" asp-controller="Manage" asp-route-StudentID="@item.Student_ID">
+                    <P>DataID : @(item.Student_ID)</P>
+                    <P>Title : @(item.Student_FullName)</P>
+                    <P>Email : @(item.Student_Email)</P>
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent CoursesStudents">
+        <button class="AddNewData" onclick="SeeAddForm('CoursesStudents')">Add Data</button>
+        @if (Model.CoursesStudents != null)
+        {
+            foreach (var item in Model.CoursesStudents)
+            {
+                <a class="TheData" asp-action="ShowStudentCoursesControlPage" asp-controller="Manage" asp-route-RelationID="@item.CourseStudentRelationshipID">
+                    <P>RelationID : @(item.CourseStudentRelationshipID)</P>
+                    <P>CourseID : @(item.CourseID)</P>
+                    <P>StudentID : @(item.StudentID)</P>
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Exams">
+        <button class="AddNewData" onclick="SeeAddForm('Exams')">Add Data</button>
+        @if (Model.Exams != null)
+        {
+            foreach (var item in Model.Exams)
+            {
+                <a class="TheData" asp-action="ShowExamControlPage" asp-controller="Manage" asp-route-ExamID="@item.Exam_ID">
+                    <P>DataID : @(item.Exam_ID)</P>
+                    <P>Title : @(item.Exam_Title)</P>
+                    <img src="~/CoursesData/@(item.Exam_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Grads">
+        <button class="AddNewData" onclick="SeeAddForm('Grads')">Add Data</button>
+        @if (Model.Grads != null)
+        {
+            foreach (var item in Model.Grads)
+            {
+                <a class="TheData"asp-action="ShowExamControlPage" asp-controller="Manage" asp-route-ExamID="@item.Exam_ID">
+                    <P>DataID : @(item.Exam_ID)</P>
+                    <P>Title : @(item.Exam_Title)</P>
+                    <img src="~/CoursesData/@(item.Exam_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Pictures">
+        <button class="AddNewData" onclick="SeeAddForm('Pictures')">Add Data</button>
+        @if (Model.Pictures != null)
+        {
+            foreach (var item in Model.Pictures)
+            {
+                <a class="TheData" asp-action="ShowPicturesControlPage" asp-controller="Manage" asp-route-ExamID="@item.Picture_ID">
+                    <P>DataID : @(item.Picture_ID)</P>
+                    <P>Title : @(item.Picture_Title)</P>
+                    <img src="~/CoursesData/@(item.Picture_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Project">
+        <button class="AddNewData" onclick="SeeAddForm('Project')">Add Data</button>
+        @if (Model.Projects != null)
+        {
+            foreach (var item in Model.Projects)
+            {
+                <a class="TheData" asp-action="ShowProjectsControlPage" asp-controller="Manage" asp-route-ExamID="@item.Project_ID">
+                    <P>DataID : @(item.Project_ID)</P>
+                    <P>Title : @(item.Project_Title)</P>
+                    <img src="~/CoursesData/@(item.Project_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Readings">
+        <button class="AddNewData" onclick="SeeAddForm('Readings')">Add Data</button>
+        @if (Model.Readings != null)
+        {
+            foreach (var item in Model.Readings)
+            {
+                <a class="TheData" asp-action="ShowReadingsControlPage" asp-controller="Manage" asp-route-ExamID="@item.Reading_ID">
+                    <P>DataID : @(item.Reading_ID)</P>
+                    <P>Title : @(item.Readings_Reading_Title)</P>
+                    <img src="~/CoursesData/@(item.Readings_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Sheets">
+        <button class="AddNewData" onclick="SeeAddForm('Sheets')">Add Data</button>
+        @if (Model.Sheets != null)
+        {
+            foreach (var item in Model.Sheets)
+            {
+                <a class="TheData" asp-action="ShowSheetsControlPage" asp-controller="Manage" asp-route-ExamID="@item.Sheet_ID">
+                    <P>DataID : @(item.Sheet_ID)</P>
+                    <P>Title : @(item.Sheet_Title)</P>
+                    <img src="~/CoursesData/@(item.Sheet_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+    <div class="TheContent Video">
+        <button class="AddNewData" onclick="SeeAddForm('Video')">Add Data</button>
+        @if (Model.Videos != null)
+        {
+            foreach (var item in Model.Videos)
+            {
+                <a class="TheData" asp-action="ShowVideosControlPage" asp-controller="Manage" asp-route-ExamID="@item.Video_ID">
+                    <P>DataID : @(item.Video_ID)</P>
+                    <P>Title : @(item.Video_Title)</P>
+                    <img src="~/CoursesData/@(item.Video_Image)" />
+                </a>
+            }
+        }
+        else
+        {
+            <p style="color:aqua ; font-size:35px ; align-self:center ; text-align:center">No Data</p>
+        }
+    </div>
+</div>

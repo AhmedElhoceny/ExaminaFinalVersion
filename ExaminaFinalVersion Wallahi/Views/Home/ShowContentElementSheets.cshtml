@@ -1,0 +1,21 @@
+﻿@model ExaminaFinalVersion.Models.Sheet
+
+@{
+    ViewData["Title"] = "ShowContentElementSheets";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent">
+    <div class="PersonDetails">
+        <p>DataID       :     @(Model.Sheet_ID)</p>
+        <p>Title        :     @(Model.Sheet_Title)</p>
+        <p>Script       :     @(Model.Sheet_Script)</p>
+        <p>CourseName   :     @(ViewBag.CourseName)</p>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div class="PersonCourses">
+        <div class="CoursesElements" style="height:600px !important">
+            <img style="width:100% ; height:100%" src="~/CoursesData/@(Model.Sheet_Distenation)" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1116 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    text-decoration:none
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+}
+
+    .nav .Nav_Left {
+        width: 19%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+        .nav .Nav_Left img {
+            width: 31px;
+            height: 35px;
+            display: inline;
+            align-self: center;
+        }
+
+        .nav .Nav_Left h1 {
+            font-size: 25px;
+            color: #fff;
+            font-weight: 900;
+            display: inline;
+            align-self: center;
+        }
+
+    .nav .Nav_Right {
+        width: 60%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        font-size: 19px;
+        margin-right: 82px;
+    }
+
+        .nav .Nav_Right li {
+            list-style: none;
+            display: inline;
+            align-self: center;
+            margin-left:50px
+        }
+
+            .nav .Nav_Right li a {
+                color: #fff;
+                font-weight: 900;
+                text-decoration: none;
+            }
+
+
+/* ******************************************* */
+
+.Body_1 {
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/pexels-gabby-k-6238038.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-position-y: center;
+}
+
+    .Body_1 p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 36px;
+        align-self: center;
+        word-wrap: 21px;
+        word-spacing: 5px;
+        line-height: 47px;
+    }
+
+    .Body_1 button {
+        width: 150px;
+        height: 50px;
+        background: none;
+        border: 3px solid #24282E;
+        color: #24282E;
+        font-size: 32px;
+        font-weight: 100;
+        align-self: center;
+        margin-top: 17px;
+        transition: background 0.2s linear;
+        cursor: pointer;
+    }
+
+        .Body_1 button:hover {
+            background-color: #24282E;
+            color: #fff;
+        }
+
+
+/* ******************************************* */
+
+.Body_2 {
+    width: 100%;
+    height: 400px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: height 0.5s linear;
+}
+
+    .Body_2 > p {
+        color: #24282E;
+        font-weight: 500;
+        font-size: 36px;
+        align-self: center;
+        word-wrap: 21px;
+        word-spacing: 5px;
+        line-height: 47px;
+        margin-bottom: 24px;
+    }
+
+    .Body_2 .Content {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        .Body_2 .Content .ContentElement {
+            width: 276px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            margin-right: 121px;
+            margin-top: 28px;
+        }
+
+            .Body_2 .Content .ContentElement:nth-child(n+4){
+                display:none;
+            }
+
+            .Body_2 .Content .ContentElement p {
+                color: #fff;
+                font-weight: 900;
+                font-size: 36px;
+                align-self: center;
+                word-wrap: 21px;
+                word-spacing: 5px;
+                line-height: 47px;
+            }
+
+.CourseDetails {
+    width: 276px;
+    height: 260px;
+    position: absolute;
+    z-index: 2px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background: none;
+}
+
+    .CourseDetails:hover {
+        opacity: 0.8;
+        background-color: #24282E;
+    }
+
+    .CourseDetails button {
+        width: 100px;
+        height: 40px;
+        background: none;
+        border: 3px solid #fff;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 100;
+        align-self: center;
+        transition: background 0.2s linear;
+        cursor: pointer;
+        text-align: center;
+        align-self: center;
+    }
+
+        .CourseDetails button:hover {
+            background-color: #fff;
+            color: #24282E;
+        }
+
+
+/* ************************************* */
+
+.Back {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/pexels-energepiccom-313690.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* **************************************** */
+
+.Profs {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background: none;
+}
+
+    .Profs div {
+        width: 240px;
+        height: 75%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-self: center;
+    }
+
+        .Profs div img {
+            width: 130px;
+            height: 120px;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        .Profs div p {
+            color: #5D5D63;
+            font-weight: 400;
+            font-size: 22px;
+            align-self: center;
+            margin-top: 9px;
+        }
+
+
+/* ******************************** */
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #9A9996;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+    .footer .left {
+        width: 40%;
+        height: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-left: 72px;
+    }
+
+        .footer .left p {
+            color: #fff;
+            font-weight: 500;
+            font-size: 24px;
+            word-spacing: 5px;
+            line-height: 28px;
+        }
+
+        .footer .left .links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+            .footer .left .links img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 44px;
+                cursor: pointer;
+            }
+
+    .footer .right {
+        width: 50%;
+        height: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+        .footer .right textarea {
+            width: 300px;
+            height: 200px;
+            background-color: #24282E;
+            border-radius: 20px;
+            align-self: center;
+            border: 2px solid #fff;
+            outline: none;
+            color: #fff;
+            font-size: 25px;
+            padding: 10px !important;
+        }
+
+        .footer .right button {
+            width: 150px;
+            height: 50px;
+            background: none;
+            border: 3px solid #24282E;
+            color: #24282E;
+            font-size: 32px;
+            font-weight: 100;
+            align-self: center;
+            margin-top: 20px;
+            transition: background 0.2s linear;
+            cursor: pointer;
+        }
+
+            .footer .right button:hover {
+                background-color: #24282E;
+                color: #fff;
+            }
+
+    .footer .left .Nav_Left {
+        width: 19%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+        .footer .left .Nav_Left img {
+            width: 31px;
+            height: 35px;
+            display: inline;
+            align-self: center;
+        }
+
+        .footer .left .Nav_Left h2 {
+            font-size: 25px;
+            color: #fff;
+            font-weight: 900;
+            display: inline;
+            align-self: center;
+        }
+
+
+/* ************************************** */
+
+.Show_More {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 3px solid #24282E !important;
+    color: #777a80;
+    font-size: 27px;
+    font-weight: 100;
+    align-self: center;
+    margin-top: 20px;
+    transition: background 0.2s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 1207px;
+    border-radius: 12px;
+    z-index: 3;
+}
+
+    .Show_More:hover {
+        background-color: #24282E;
+        color: #fff;
+    }
+
+.scrollUp {
+    width: 63px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    right: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ********************************* */
+
+.LogIn,
+.MyRight > div > form {
+    width: 376px;
+    height: 362px;
+    background-color: #24282E66;
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border-radius: 20px;
+    top: 175px;
+    z-index: 5;
+}
+
+    .LogIn input,
+    .Sign input,
+    .MyRight > div > form input {
+        width: 269px;
+        height: 42px;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: 23px;
+        margin-top: 47px;
+        align-self: center;
+        background: none;
+        border-left: 2px solid #fff;
+        border-right: none;
+        border-top: none;
+    }
+
+    .LogIn button,
+    .Sign button {
+        width: 150px;
+        height: 45px;
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 23px;
+        text-align: center;
+        align-self: center;
+        margin-top: 42px;
+        cursor: pointer;
+        transition: background 0.3s linear;
+    }
+
+        .LogIn button:hover,
+        .Sign button:hover {
+            background-color: #fff;
+            color: #24282E;
+        }
+
+    .LogIn a {
+        color: #e1cbcb;
+        font-size: 19px;
+        align-self: center;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+.Sign {
+    width: 376px;
+    height: 500px;
+    background-color: #24282E66;
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border-radius: 20px;
+    top: 90px;
+}
+
+    .Sign button{
+        margin-bottom:30px;
+        border-radius:10px;
+        height:60px
+    }
+    /* ***************************** */
+    .BodyContent {
+        background-image: url("../images/pexels-august-de-richelieu-4260477.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+.Container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+    .Container > p {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+        align-self: center;
+        margin-bottom: 57px;
+    }
+
+    .Container .MyBody {
+        width: 100%;
+        height: 80%;
+        background: none;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+        .Container .MyBody .MyLeft {
+            width: 23%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            color: #fff;
+            background-color: #24282E66;
+            margin-left: 10px;
+            font-size: 25px im !important;
+        }
+
+            .Container .MyBody .MyLeft .ChoosesContent {
+                align-self: center;
+                font-size: 25px !important;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+        .Container .MyBody .MyRight {
+            width: 59%;
+            height: 100%;
+            background: none;
+            background-color: #24282E66;
+            margin-right: 10px;
+        }
+
+.Readings,
+.Videos,
+.Sheets,
+.Pictures,
+.Exams,
+.Projects,
+.Grads,
+.Members {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px !important;
+    overflow-y: scroll;
+    transition: top 0.5s linear;
+}
+
+.Elements {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/pexels-laker-5792979.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.MyRight img {
+    width: 60px;
+    height: 60px;
+    display: inline;
+    cursor: pointer;
+}
+
+
+/* ****************************** */
+
+.place {
+    width: 100%;
+    height: 800px;
+    background-color: #24282E;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+}
+
+.MyRight textarea {
+    padding: 10px !important;
+    color: #24282E;
+    font-size: 25px;
+}
+
+.MyRight label {
+    font-size: 25px;
+    color: #fff;
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+/* ********************************** */
+
+.PersonContent {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+    .PersonContent .Persona {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .PersonContent .Persona img {
+            width: 87px;
+            height: 70px;
+            border-radius: 30px;
+            align-self: center;
+        }
+
+        .PersonContent .Persona p {
+            align-self: center;
+            color: #fff;
+            font-size: 35px;
+        }
+
+    .PersonContent .PersonDetails {
+        width: 70%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: #24282E66;
+        margin-left: 50px;
+        margin-top: 42px;
+        padding:30px
+    }
+
+        .PersonContent .PersonDetails p {
+            color: #fff;
+            font-size: 25px;
+        }
+
+    .PersonContent .PersonCourses {
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: #24282E66;
+        align-self: center;
+    }
+
+        .PersonContent .PersonCourses p {
+            color: #fff;
+            font-size: 25px;
+            align-self: center;
+        }
+
+        .PersonContent .PersonCourses .CoursesElements {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+
+            .PersonContent .PersonCourses .CoursesElements a {
+                width: 200px;
+                height: 90%;
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                background-size: cover;
+                cursor: pointer;
+                transition: opacity 0.5s linear;
+                text-decoration:none
+            }
+
+                .PersonContent .PersonCourses .CoursesElements a:hover {
+                    opacity: 0.8;
+                }
+
+
+/* *************************************** */
+
+.Enreoll {
+    width: 200px;
+    height: 60px;
+    display: block;
+    background: none;
+    color: rgb(0, 76, 255);
+    font-size: 30px;
+    font-weight: 900;
+    align-self: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 3px solid rgb(0, 76, 255);
+    transition: background 0.5s linear, color 0.3s linear;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+    .Enreoll:hover {
+        background-color: rgb(0, 76, 255);
+        color: #fff;
+    }
+
+    .Enreoll p {
+        align-self: center;
+    }
+
+
+/* ************************************* */
+
+.EnrollBody {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.EnrollCoursesContainer {
+    width: 70%;
+    height: 80%;
+    background-color: #24282E4F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    border-radius: 23px;
+    padding: 10px !important;
+}
+
+.EnrollCourseShow {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-image: url("../images/pexels-cottonbro-4709366.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-position-y: center;
+}
+
+    .EnrollCourseShow > p {
+        font-size: 35px;
+        color: #fff;
+        align-self: center;
+        font-weight: 500;
+    }
+
+.EnrollTheCourse {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    background-color: #24282E9E;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+    .EnrollTheCourse:hover {
+        opacity: 1;
+    }
+
+    .EnrollTheCourse a {
+        width: 155px;
+        height: 50px;
+        background-color: #526446;
+        color: #fff;
+        display: inline-block;
+        border-radius: 10px;
+        border: 3px #fff solid;
+        transition: background 0.3s linear, color 0.3s linear;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 900;
+        align-self: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .EnrollTheCourse a p {
+            align-self: center;
+            text-decoration: none;
+        }
+
+
+/* *************************************** */
+
+.ControlCourses {
+    width: 70%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: #24282EBA !important;
+    border-radius: 20px;
+    padding: 10px !important;
+}
+
+    .ControlCourses .CourseI {
+        width: 80%;
+        height: 50px;
+        background: none;
+        border: 2px solid #fff;
+        align-self: center;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        cursor: pointer;
+        transition: background 0.2s linear;
+        border-radius: 20px;
+    }
+
+        .ControlCourses .CourseI:hover {
+            background-color: #526446;
+        }
+
+        .ControlCourses .CourseI p {
+            color: #fff;
+            font-weight: 500;
+            font-size: 25px;
+            align-self: center;
+        }
+
+        .ControlCourses .CourseI img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            align-self: center;
+        }
+
+.placeholder {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    display: none;
+    background-color: #454545cd;
+}
+
+.AddCourse {
+    width: 200px;
+    height: 50px;
+    background-color: #55ff00ce;
+    color: #fff;
+    border: 3px #55ff00ce solid;
+    font-size: 25px;
+    font-weight: 100;
+    align-self: center;
+    margin-top: 17px;
+    transition: background 0.3s linear, border 0.3s linear;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+    .AddCourse:hover {
+        background-color: #55ff00;
+        border: 3px #fff solid;
+    }
+
+.SelectControlledContent {
+    width: 80%;
+    background-color: #494a48b6;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px !important;
+    display: none;
+    z-index: 5;
+    align-self: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+}
+
+    .SelectControlledContent div {
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        border: 0px #fff solid;
+        transition: border 0.3s linear;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+        .SelectControlledContent div:hover {
+            border: 3px #fff solid;
+        }
+
+        .SelectControlledContent div p {
+            align-self: center;
+            font-size: 30px;
+            color: #fff;
+        }
+
+
+/* ****************************************** */
+
+.ControllBar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 68px;
+    background-color: rgba(105, 105, 105, 0.19);
+}
+
+    .ControllBar div {
+        width: 130px;
+        height: 80%;
+        border: 1px #fff solid;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        transition: background 0.3s linear;
+        cursor: pointer;
+        align-self: center;
+    }
+
+        .ControllBar div p {
+            align-self: center;
+            color: #55ff00;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+.Choosen {
+    background-color: rgb(12, 93, 28);
+}
+
+
+/* ***************************** */
+
+.DetailsContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: none;
+}
+
+    .DetailsContainer .TheContent {
+        width: 90%;
+        height: 70%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 20px;
+        background-color: rgba(70, 76, 76, 0.476);
+        position: absolute;
+        margin-left: -3000px;
+        transition: margin 0.3s linear;
+        overflow-y: auto !important;
+        top: 300px;
+    }
+
+        .DetailsContainer .TheContent .TheData {
+            width: 80%;
+            height: 50px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin-top: 15px;
+            background-color: rgba(70, 76, 76, 0.707);
+            align-self: center;
+            cursor: pointer;
+        }
+
+            .DetailsContainer .TheContent .TheData p {
+                color: #fff;
+                font-size: 25px;
+                align-self: center;
+            }
+
+            .DetailsContainer .TheContent .TheData img {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                align-self: center;
+            }
+
+.Visible {
+    margin-left: 0px !important;
+    align-self: center;
+}
+.AddNewData {
+    width: 150px;
+    height: 52px;
+    text-align: center;
+    background-color: #09d1ffcc;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: border 0.2s linear;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 11px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.AddNewData:hover{
+    border:3px solid #fff;
+}
+.HiddenDiv {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(70, 76, 76, 0);
+    position:absolute;
+    top:0px;
+    display:none;
+    z-index:3
+}
+.ControlButtons {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    transition:border 0.3s linear;
+    margin-top:80px
+}
+    .ControlButtons a{
+        text-decoration:none
+    }
+    .ControlButtons a:hover {
+        border: 4px solid #fff !important;
+    }

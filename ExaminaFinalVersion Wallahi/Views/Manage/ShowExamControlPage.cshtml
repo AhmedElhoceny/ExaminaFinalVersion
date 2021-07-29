@@ -1,0 +1,39 @@
+﻿@model ExaminaFinalVersion.Models.Exam
+
+@{
+    ViewData["Title"] = "ShowExamControlPage";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent" style="height:700px">
+    <div class="PersonDetails">
+        <p>ExamID       :     @(Model.Exam_ID)</p>
+        <p>ExamTitle        :     @(Model.Exam_Title)</p>
+        <p>ExamScript       :     @(Model.Exam_Script)</p>
+        <img src="~/CoursesData/@(Model.Exam_Image)" style="width:130px ; height:90px ;" />
+    </div>
+    <div class="ControlButtons">
+        <a asp-action="ShowCourseControlPageDelete" asp-controller="Manage" asp-route-dataID="@Model.Exam_ID" asp-route-InfoType="Exam" style="        display: block;
+        background-color: red;
+        border: 1px solid #fff;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        font-size: 41px;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+">Delete</a>
+        <a asp-action="ManagePage" asp-controller="Manage" style="        display: block;
+        background-color: chartreuse;
+        border: 1px solid #fff;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        font-size: 41px;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+">Back</a>
+    </div>
+</div>

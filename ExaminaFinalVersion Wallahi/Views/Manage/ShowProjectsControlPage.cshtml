@@ -1,0 +1,40 @@
+﻿@model ExaminaFinalVersion.Models.Project
+
+@{
+    ViewData["Title"] = "ShowProjectsControlPage";
+    Layout = "~/_Layout4.cshtml";
+}
+
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent" style="height:700px">
+    <div class="PersonDetails">
+        <p>ProjectID       :     @(Model.Project_ID)</p>
+        <p>ProjectTitle        :     @(Model.Project_Title)</p>
+        <p>ProjectScript       :     @(Model.Project_Script)</p>
+        <img src="~/CoursesData/@(Model.Project_Image)" style="width:130px ; height:90px ;" />
+    </div>
+    <div class="ControlButtons">
+        <a asp-action="ShowCourseControlPageDelete" asp-controller="Manage" asp-route-dataID="@Model.Project_ID" asp-route-InfoType="Project" style="        display: block;
+        background-color: red;
+        border: 1px solid #fff;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        font-size: 41px;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+">Delete</a>
+        <a asp-action="ManagePage" asp-controller="Manage" style="        display: block;
+        background-color: chartreuse;
+        border: 1px solid #fff;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        font-size: 41px;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+">Back</a>
+    </div>
+</div>

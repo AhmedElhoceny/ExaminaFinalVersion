@@ -1,0 +1,42 @@
+﻿@model ExaminaFinalVersion_Wallahi.Models.PersonViewModel
+
+@{
+    ViewData["Title"] = "Person";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent" >
+    <div class="Persona">
+        <img src="~/Images/2.jpeg" alt="">
+        <p>Amr</p>
+    </div>
+    <div class="PersonDetails">
+        <p>FullName     :      @(Model.Student_FullName)</p>
+        <p>Email     :     @(Model.Student_Email)</p>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;">
+    </div>
+
+    <div class="PersonCourses">
+        <p>Courses</p>
+        <div class="CoursesElements">
+            @if (Model.StudentCourses != null)
+            {
+                @foreach (var item in Model.StudentCourses)
+                {
+                    
+                    <a asp-action="ShowCourseDetails" asp-controller="Home" asp-route-courseID="@(item.Course_ID)" class="Course" style="background-image: url('@Url.Content("~/Images/" + (item.Course_Image))');">
+                        <p>@(item.Course_Name)</p>
+                    </a>
+                }
+            }
+            else
+            {
+                <p style="color:chartreuse; font-size:30px ; text-align:center">No Courses</p>
+            }
+        </div>
+    </div>
+    <a asp-action="EnrollCourses" asp-controller="Home" asp-route-name="@(Model.Student_FullName)" class="Enreoll" >
+        <p>Enroll Courses</p>
+    </a>
+</div>

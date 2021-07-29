@@ -1,0 +1,69 @@
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.deps.json
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.runtimeconfig.json
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.runtimeconfig.dev.json
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.dll
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.pdb
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.csprojAssemblyReference.cache
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.AssemblyInfoInputs.cache
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.AssemblyInfo.cs
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.csproj.CoreCompileInputs.cache
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorAssemblyInfo.cache
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorAssemblyInfo.cs
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorTargetAssemblyInfo.cache
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.dll
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.pdb
+C:\Users\elmo7taref\source\repos\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.genruntimeconfig.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\appsettings.json
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.deps.json
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.runtimeconfig.json
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.runtimeconfig.dev.json
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.dll
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.pdb
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.Views.dll
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\bin\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.Views.pdb
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.csprojAssemblyReference.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.AssemblyInfoInputs.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.AssemblyInfo.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.csproj.CoreCompileInputs.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorAssemblyInfo.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorAssemblyInfo.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.TagHelpers.input.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.TagHelpers.output.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorCoreGenerate.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\_Layout1.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\_ViewImports.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorTargetAssemblyInfo.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.RazorTargetAssemblyInfo.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.Views.pdb
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.dll
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.pdb
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.genruntimeconfig.cache
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\ExaminaFinalVersion_Wallahi.csproj.CopyComplete
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\LogIn.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\SignIn.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\Person.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\_Layout2.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\EnrollCourses.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowCourseDetails.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementReadings.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementVideo.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementSheets.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementPictures.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementExams.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementProjects.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowContentElementGrads.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ManagePage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\_Layout3.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowCourseControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\_Layout4.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowStudentControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowStudentCoursesControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowExamControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowPicturesControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowProjectsControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowReadingsControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowSheetsControlPage.cshtml.g.cs
+E:\self study\WEB\projects\ExaminaFinalVersion Wallahi\ExaminaFinalVersion Wallahi\obj\Debug\netcoreapp2.1\Razor\Views\Manage\ShowVideosControlPage.cshtml.g.cs

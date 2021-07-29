@@ -1,0 +1,112 @@
+﻿@model ExaminaFinalVersion_Wallahi.Models.CourseContentViewModel
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examina</title>
+    <link rel="stylesheet" href="~/Styles/Style.css">
+</head>
+
+<body class="BodyContent">
+    <div class="nav" style="position: unset !important;">
+        <div class="Nav_Left">
+            <img src="~/Images/book.png">
+            <h1>Examina</h1>
+        </div>
+        <ul class="Nav_Right">
+            <li><a asp-action="Index" asp-controller="Home">LogOut</a></li>
+        </ul>
+    </div>
+    <div style="height: 100px;"></div>
+    <div class="place" onclick="HidePlace()" style="display: none;"></div>
+    <div class="Container">
+        <p>Course_Name</p>
+        <div class="MyBody">
+            <div class="MyLeft">
+                <p class="ChoosesContent" onclick="ShowContents(1)">Readings</p>
+                <p class="ChoosesContent" onclick="ShowContents(2)">Videos</p>
+                <p class="ChoosesContent" onclick="ShowContents(3)">Sheets</p>
+                <p class="ChoosesContent" onclick="ShowContents(4)">Pictures</p>
+                <p class="ChoosesContent" onclick="ShowContents(5)">Exams</p>
+                <p class="ChoosesContent" onclick="ShowContents(6)">Projects</p>
+                <p class="ChoosesContent" onclick="ShowContents(7)">Grads</p>
+                <p class="ChoosesContent" onclick="ShowContents(8)">Members</p>
+            </div>
+            <div class="MyRight">
+                <div class="Readings" style="display: flex;">
+                    @foreach (var Item in Model.Readings)
+                    {
+
+                    <a class="Elements" asp-action="ShowContentElementReadings" asp-controller="Home" asp-route-Element_ID="@Item.Reading_ID" asp-route-CourseID="@Item.Course_ID"  style="        background-image: url('@Url.Content("~/CoursesData/" + (Item.Readings_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Videos" style="display: none;">
+                    @foreach (var Item in Model.Videos)
+                    {
+                    <a class="Elements" asp-action="ShowContentElementVideo" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Video_ID" style="        background-image:  url('@Url.Content("~/CoursesData/" + (Item.Video_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Sheets" style="display: none;">
+                    @foreach (var Item in Model.Sheets)
+                    {
+                    <a class="Elements" asp-action="ShowContentElementSheets" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Sheet_ID" style="        background-image:  url('@Url.Content("~/CoursesData/" + (Item.Sheet_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Pictures" style="display: none;">
+                    @foreach (var Item in Model.Pictures)
+                    {
+                    <a class="Elements" asp-action="ShowContentElementPictures" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Picture_ID" style="        background-image:  url('@Url.Content("~/CoursesData/" + (Item.Picture_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Exams" style="display: none;">
+                    @foreach (var Item in Model.Exams)
+                    {
+                    <a class="Elements"  asp-action="ShowContentElementExams" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Exam_ID" style="        background-image:  url('@Url.Content("~/CoursesData/" + (Item.Exam_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Projects" style="display: none;">
+                    @foreach (var Item in Model.Projects)
+                    {
+                    <a class="Elements" asp-action="ShowContentElementProjects" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Project_ID"  style="background-image:  url('@Url.Content("~/CoursesData/" + (Item.Project_Image))') !important"></a>
+                    }
+                </div>
+                <div class="Grads" style="display: none;">
+                    @foreach (var Item in Model.Grads)
+                    {
+                    <a class="Elements" asp-action="ShowContentElementGrads" asp-controller="Home" asp-route-Course_id="@Item.Course_ID" asp-route-Element_ID="@Item.Exam_ID"  style="background-image:  url('@Url.Content("~/CoursesData/" + (Item.Exam_Image))') !important"></a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 100px;"></div>
+    <div class="footer" style="background: none !important;">
+        <div class="left">
+            <div class="Nav_Left">
+                <img src="~/Images/book.png">
+                <h2>Examina</h2>
+            </div>
+            <p>The automated process starts as soon <br /> as your clothes go into the machine.</p>
+            <div class="links">
+                <img src="~/Images/facebook.png">
+                <img src="~/Images/twitter.png">
+                <img src="~/Images/gmail.png">
+            </div>
+        </div>
+        <div class="right">
+            <textarea cols="30" rows="10"></textarea>
+            <button class="Send">Send</button>
+        </div>
+    </div>
+    <img class="scrollUp" onclick="GoUp()" src="~/Images/up-arrow.png">
+
+    <script src="~/Script/Script.js"></script>
+</body>
+
+</html>

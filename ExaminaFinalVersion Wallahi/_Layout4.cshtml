@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="~/Styles/Style.css">
+    <title>Examina/Index</title>
+</head>
+<body style="        background-image: url('@Url.Content("~/Images/pexels-jeshootscom-442574.jpg")');">
+    <div class="nav">
+        <div class="Nav_Left">
+            <img src="~/Images/book.png">
+            <h1>Examina</h1>
+        </div>
+        <ul class="Nav_Right">
+            <li><a asp-action="Index" asp-controller="Home">LogOut</a></li>
+        </ul>
+    </div>
+    @RenderBody()
+    <img class="scrollUp" onclick="GoUp()" src="~/Images/up-arrow.png">
+    <div class="footer" style="background:none !important">
+        <div class="left">
+            <div class="Nav_Left">
+                <img src="~/Images/book.png">
+                <h2>Examina</h2>
+            </div>
+            <p>The automated process starts as soon <br /> as your clothes go into the machine.</p>
+            <div class="links">
+                <img src="~/Images/facebook.png">
+                <img src="~/Images/twitter.png">
+                <img src="~/Images/gmail.png">
+            </div>
+        </div>
+        <div class="right">
+            <textarea cols="30" rows="10"></textarea>
+            <button class="Send">Send</button>
+        </div>
+    </div>
+    <script src="~/Script/Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@model ExaminaFinalVersion.Models.Exam
+
+@{
+    ViewData["Title"] = "ShowContentElementGrads";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent">
+    <div class="PersonDetails">
+        <p>DataID       :     @(Model.Exam_ID)</p>
+        <p>Title        :     @(Model.Exam_Title)</p>
+        <p>Script       :     @(Model.Exam_Script)</p>
+        <p>CourseName   :     @(ViewBag.CourseName)</p>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div class="PersonCourses">
+        <div class="CoursesElements" style="height:600px !important">
+            <img style="width:100% ; height:100%" src="~/CoursesData/@(Model.Exam_Distenation)" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="~/Styles/Style.css">
+    <title>Examina/LogIn</title>
+</head>
+
+<body>
+    <video preload="true" autoplay loop muted>
+        <source src="~/Videos/Copyright Background Waterfalls Nature Video Loop Animation.mp4" type="video/mp4">
+        <source src="~/Videos/Copyright Background Waterfalls Nature Video Loop Animation.ogv" type="video/ogg">
+        <source src="~/Videos/Copyright Background Waterfalls Nature Video Loop Animation.webm" type="video/webm">
+    </video>
+    <form method="POST" asp-action="LogInPost" asp-controller="Home" class="LogIn">
+        <input type="email" name="Email" placeholder="Email....">
+        <input type="password" name="PassWord" placeholder="PassWord....">
+        <button type="submit">LogIn</button>
+        <a asp-action="SignIn" asp-controller="Home">Create New Account</a>
+    </form>
+    <img class="scrollUp" onclick="GoUp()" src="~/Images/up-arrow.png">
+    <script src="~/Script/Script.js"></script>
+</body>
+
+</html>

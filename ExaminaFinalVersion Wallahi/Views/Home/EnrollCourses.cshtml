@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ExaminaFinalVersion.Models.Courses>
+
+@{
+    ViewData["Title"] = "EnrollCourses";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="~/Styles/Style.css">
+    <title>Examina/Person</title>
+</head>
+<body style="background-image: url('@Url.Content("~/Images/pexels-charlotte-may-5825572.jpg")');">
+    <div class="nav">
+        <div class="Nav_Left">
+            <img src="~/Images/book.png">
+            <h1>Examina</h1>
+        </div>
+        <ul class="Nav_Right">
+            <li><a asp-action="Index" asp-controller="Home">LogOut</a></li>
+        </ul>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div class="EnrollBody">
+        <div class="EnrollCoursesContainer">
+            @foreach (var item in Model)
+            {
+                <div class="EnrollCourseShow" style="background-image: url('@Url.Content("~/Images/" + (item.Course_Image))');">
+                    <p>@(item.Course_Name)</p>
+                    <div class="EnrollTheCourse">
+                        <a onclick="ChangeView(this)" asp-action="EnrollCoursePost" asp-controller="Home" asp-route-courseID="@(item.Course_ID)" asp-route-studentID="@(ViewBag.StudentID)">
+                            <p>Enroll Now</p>
+                        </a>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <img class="scrollUp" onclick="GoUp()" src="~/Images/up-arrow.png">
+    <div class="footer" style="background: none;">
+        <div class="left">
+            <div class="Nav_Left">
+                <img src="~/Images/book.png">
+                <h2>Examina</h2>
+            </div>
+            <p>The automated process starts as soon <br /> as your clothes go into the machine.</p>
+            <div class="links">
+                <img src="~/Images/facebook.png">
+                <img src="~/Images/twitter.png">
+                <img src="~/Images/gmail.png">
+            </div>
+        </div>
+        <div class="right">
+            <textarea cols="30" rows="10"></textarea>
+            <button class="Send">Send</button>
+        </div>
+    </div>
+    <script src="~/Script/Script.js"></script>
+</body>
+
+</html>

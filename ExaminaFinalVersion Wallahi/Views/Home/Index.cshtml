@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ExaminaFinalVersion.Models.Courses>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/_Layout1.cshtml";
+}
+<div class="Body_1">
+    <p>Online Studying<br /> PlateForm</p>
+    <button onclick="Start()">Start</button>
+</div>
+<div style="height: 100px;"></div>
+<div class="CoursesDetails">
+
+</div>
+@if (ViewBag.Messege != "Good")
+{
+<div class="ResultMessage">
+        <p>@(ViewBag.Messege)</p>
+</div>
+}
+
+<div class="Body_2">
+    <p id="MyPar">Our Courses </p>
+    <button class="Show_More" onclick="ShowMore()">ShowMore</button>
+    <div class="Content">
+        @foreach (var DataItem in Model)
+        {
+            <div class="ContentElement" style="background-image: url('@Url.Content("~/Images/" + (DataItem.Course_Image))')">
+                <p>@(DataItem.Course_Name)</p>
+                <div class="CourseDetails">
+                    <button>Details</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div style="height: 100px;"></div>
+<div class="Back"></div>
+<div style="height: 100px;"></div>
+<div class="Profs">
+    <div>
+        <img src="~/Images/pexels-harrison-haines-3536436.jpg" alt="">
+        <p>DR:John Santana</p>
+    </div>
+    <div>
+        <img src="~/Images/pexels-nasser-almutairi-3054137.jpg" alt="">
+        <p>DR:Mohamed Omar</p>
+    </div>
+    <div>
+        <img src="~/Images/pexels-laker-5792979.jpg" alt="">
+        <p>DR:Steve</p>
+    </div>
+</div>
+<div style="height: 100px;"></div>

@@ -1,0 +1,21 @@
+﻿@model ExaminaFinalVersion.Models.Project
+
+@{
+    ViewData["Title"] = "ShowContentElementProjects";
+    Layout = "~/_Layout4.cshtml";
+}
+<div style="width: 100%; height: 100px; background: none;"></div>
+<div class="PersonContent">
+    <div class="PersonDetails">
+        <p>DataID       :     @(Model.Project_ID)</p>
+        <p>Title        :     @(Model.Project_Title)</p>
+        <p>Script       :     @(Model.Project_Script)</p>
+        <p>CourseName   :     @(ViewBag.CourseName)</p>
+    </div>
+    <div style="width: 100%; height: 100px; background: none;"></div>
+    <div class="PersonCourses">
+        <div class="CoursesElements" style="height:600px !important">
+            <img style="width:100% ; height:100%" src="~/CoursesData/@(Model.Project_Distenation)" />
+        </div>
+    </div>
+</div>
